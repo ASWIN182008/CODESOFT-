@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+
+header{
+    background:#1f4f82;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+    background:white;
+    gap:40px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#1f4f82;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.hero-text button{
+    background:#1f4f82;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero-text button:hover{
+    background:#16395d;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:50px 20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#1f4f82;
+    margin-bottom:10px;
+}
+
+/* About */
+
+.about{
+    background:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.about h2{
+    color:#1f4f82;
+    margin-bottom:15px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact h2{
+    color:#1f4f82;
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    background:#1f4f82;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+}
